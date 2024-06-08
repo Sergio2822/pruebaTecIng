@@ -1,21 +1,18 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <h1>Prueba técnica de ingreso</h1>
+      <br />
+      Candidato: Sergio Serrallonga Hernandez
     </div>
   </header>
 
-  <main>
-    <TheWelcome />
-  </main>
+  <main><Home /></main>
 </template>
+
+<script setup>
+import Home from "./components/Home.vue";
+</script>
 
 <style scoped>
 header {
@@ -41,6 +38,7 @@ header {
   header .wrapper {
     display: flex;
     place-items: flex-start;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
